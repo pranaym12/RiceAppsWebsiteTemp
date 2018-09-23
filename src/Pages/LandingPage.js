@@ -28,7 +28,7 @@ export default class LandingPage extends Component{
             </div>  
           </Grid.Column>
           <Grid.Column width = {6.5}>
-            
+            <hr/>
           </Grid.Column>
         </Grid.Row>
       

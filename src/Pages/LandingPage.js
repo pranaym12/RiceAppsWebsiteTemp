@@ -11,10 +11,10 @@ export default class LandingPage extends Component{
         <Grid id="grid" verticalAlign='middle' centered columns={3}>
         
         <Grid.Row columns = {1}>
-          <Grid.Column textAlign="center" id="riceAppsText" class="landingText">
-            
-              Rice Apps
-            
+          <Grid.Column textAlign="center" id="riceAppsText" >
+          <div class="whiteText">
+              <span class="lightBlue">R</span>ice<span class="lightBlue">A</span>pps
+          </div>
             
           </Grid.Column>
         </Grid.Row>
@@ -23,10 +23,12 @@ export default class LandingPage extends Component{
             <hr/>
           </Grid.Column>
           <Grid.Column width = {3} textAlign="center" id="weDoThingsText">
-              We do things      
+            <div class="whiteText">
+              We do things    
+            </div>  
           </Grid.Column>
           <Grid.Column width = {6.5}>
-            Empty column
+            
           </Grid.Column>
         </Grid.Row>
       

@@ -20,3 +20,9 @@ hr {
     font-size: 5vh;
     padding-top:0;
 }
+.whiteText{
+    color: #ffffff;
+}
+.lightBlue{
+    color: #729AFC !important;
+}

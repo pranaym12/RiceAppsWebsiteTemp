@@ -1,0 +1,24 @@
+hr {
+    display: block;
+    height: 1vh;
+    border: 0;
+    background-color: white;
+    margin: 1em 0;
+    padding: 0;
+}
+#riceAppsText{
+    font-size: 12vh;
+    padding-bottom:0;
+}
+
+#grid{
+    height:100vh;
+  background: linear-gradient(
+#6B55F3 0%, rgba(119,99,240,0.86) 63.54%, rgba(132,115,237,0.8) 100%
+    );
+}
+
+#weDoThingsText{
+    font-size: 5vh;
+    padding-top:0;
+}

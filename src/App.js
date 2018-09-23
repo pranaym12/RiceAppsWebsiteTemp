@@ -15,13 +15,6 @@ class App extends Component {
     return (
   <div>
   <LandingPage/>
-  <AboutUs/>
-  <Stats/>
-  <TechPage/>
-  <Projects1/>
-  <Projects2/>
-  <Customer/>
-  <Footer/>
   </div>
     );
   }

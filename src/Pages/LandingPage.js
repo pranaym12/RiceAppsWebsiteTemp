@@ -8,10 +8,10 @@ export default class LandingPage extends Component{
   render() {
     return(
       
-        <Grid id="grid" verticalAlign='middle' centered columns={3}>
+        <Grid id="grid" centered columns={3} >
         
-        <Grid.Row columns = {1}>
-          <Grid.Column textAlign="center" id="riceAppsText" >
+        <Grid.Row columns = {1} verticalAlign="middle" >
+          <Grid.Column textAlign="center" style={{marginTop: "30vh"}} id="riceAppsText" >
           <div class="whiteText">
               <span class="lightBlue">R</span>ice<span class="lightBlue">A</span>pps
           </div>
@@ -19,7 +19,7 @@ export default class LandingPage extends Component{
           </Grid.Column>
         </Grid.Row>
         <Grid.Row columns = {3} >
-          <Grid.Column width = {6.5} textAlign="right">
+          <Grid.Column width = {6.5} textAlign="right" fluid vertical>
             <hr/>
           </Grid.Column>
           <Grid.Column width = {3} textAlign="center" id="weDoThingsText">
@@ -28,7 +28,7 @@ export default class LandingPage extends Component{
             </div>  
           </Grid.Column>
           <Grid.Column width = {6.5}>
-            <hr/>
+            
           </Grid.Column>
         </Grid.Row>
       

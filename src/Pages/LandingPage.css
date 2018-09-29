@@ -12,13 +12,13 @@ hr {
 }
 
 #grid{
-    height:100vh;
+    height:103vh;/*Makes the page fill the whole page and then some*/
   background: #002FA4;
 }
 
 #weDoThingsText{
     font-size: 5vh;
-    padding-top:0;
+    /*padding-top:;*/
 }
 .whiteText{
     color: #ffffff;

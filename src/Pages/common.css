@@ -6,13 +6,11 @@
 
 .landingPageWrapper { 
   height:100vh;
-  background: linear-gradient(
-#6B55F3 0%, rgba(119,99,240,0.86) 63.54%, rgba(132,115,237,0.8) 100%
-    );
+  background: #002FA4;
 }
 
-.AboutPageWrapper {
-  height:120vh;
+.AboutPageWrapper{
+  height:100vh;
   background: white;
 }
 

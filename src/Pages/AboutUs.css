@@ -1,0 +1,54 @@
+.outside {
+    height: 110vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #002FA4
+  }
+  
+  .vert-line {
+    background-color: white !important;
+    z-index: 9999;
+    height: 20vh;
+    width: 0.5vh;
+    margin-top: 3vh;
+    margin-bottom: 9vh;
+    position: relative;
+  }
+  
+  #big-p {
+    font-size: 6vh;
+    align-content: center;
+    text-align: center;
+    padding-left: 30vh;
+    padding-right: 30vh;
+    color: white;
+  }
+  
+  #ins-p {
+    font-size: 9vh;
+    align-content: center;
+    text-align: center;
+    padding-left: 30vh;
+    padding-right: 30vh;
+    color: white;
+  }
+  
+  #learn-more {
+    font-size: 3.1vh;
+    align-content: center;
+    text-align: center;
+    padding-left: 30vh;
+    padding-right: 30vh;
+    color: white;
+    margin-bottom: 5vh;
+  }
+  a {
+    color: white;
+  }
+
+  u {
+    border-bottom-width: 0.1vh;
+  }
+  

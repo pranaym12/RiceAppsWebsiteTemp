@@ -1,29 +1,35 @@
-.StatPageWrapper{
+.StatPageWrapper {
   height: 50vh;
   background-color: #F8F8F8;
   padding-top: 7%;
 }
-.landingPageWrapper{
+
+.landingPageWrapper { 
   height:100vh;
   background: linear-gradient(
 #6B55F3 0%, rgba(119,99,240,0.86) 63.54%, rgba(132,115,237,0.8) 100%
     );
 }
-.AboutPageWrapper{
+
+.AboutPageWrapper {
   height:120vh;
   background: white;
 }
-.TechPageWrapper{
+
+.TechPageWrapper {
   height:100vh;
   background-color: white;
 }
-.ProjectPageWrapper{
+
+.ProjectPageWrapper {
   height: 100vh;
   background-color: red;
 }
-.CustomerPageWrapper{
+
+.CustomerPageWrapper {
   height: 100vh;
 }
-.FooterWrapper{
+
+.FooterWrapper {
   height: 30vh;
 }

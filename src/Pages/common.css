@@ -1,27 +1,33 @@
-.StatPageWrapper{
+.StatPageWrapper {
   height: 50vh;
   background-color: #F8F8F8;
   padding-top: 7%;
 }
-.landingPageWrapper{
+
+.landingPageWrapper { 
   height:100vh;
   background: #002FA4;
 }
+
 .AboutPageWrapper{
   height:100vh;
   background: white;
 }
-.TechPageWrapper{
+
+.TechPageWrapper {
   height:100vh;
   background-color: white;
 }
-.ProjectPageWrapper{
+
+.ProjectPageWrapper {
   height: 100vh;
   background-color: red;
 }
-.CustomerPageWrapper{
+
+.CustomerPageWrapper {
   height: 100vh;
 }
-.FooterWrapper{
+
+.FooterWrapper {
   height: 30vh;
 }

@@ -1,0 +1,38 @@
+.title{
+  display: flex;
+  flex-wrap:nowrap;
+  align-items: center;
+  justify-content: space-around;
+  color: #B1CBF6;
+  padding-left: 12%;
+  padding-top: 12%;
+  width: 85%;
+  height: 20%;
+}
+
+.title h1{
+  font-size: 500%;
+}
+
+hr{
+  background-color: #B1CBF6;
+  width: 30%;
+
+}
+
+.projectSection{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding-left: 17%;
+  padding-top: 6%;
+  width: 85%;
+  height: 50%
+
+}
+
+.projectSection .emptySpace{
+  height: 500px;
+  width: 500px;
+  background: #D8D8D8;
+}

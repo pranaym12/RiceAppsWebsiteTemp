@@ -19,7 +19,7 @@
 }
 .ProjectPageWrapper{
   height: 100vh;
-  background-color: red;
+  background: linear-gradient(to right, #4470DE 70%, #F2F2F2 30%);
 }
 .CustomerPageWrapper{
   height: 100vh;

@@ -4,7 +4,7 @@
   padding-top: 7%;
 }
 
-.landingPageWrapper { 
+.landingPageWrapper {
   height:100vh;
   background: #002FA4;
 }
@@ -21,7 +21,7 @@
 
 .ProjectPageWrapper {
   height: 100vh;
-  background-color: red;
+  background: linear-gradient(to right, #4470DE 60%, #F2F2F2 40%);
 }
 
 .CustomerPageWrapper {
@@ -30,4 +30,9 @@
 
 .FooterWrapper {
   height: 30vh;
+}
+
+.JoinUsPageWrapper {
+  height: 100vh;
+  background: linear-gradient(to right, #B1CBF6 60%, #F2F2F2 40%);
 }

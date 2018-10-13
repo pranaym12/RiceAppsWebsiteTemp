@@ -26,23 +26,24 @@ export default class LandingPage extends Component {
       button_classes = "hamburger hamburger--collapse "
     }
     return(
-
-      <div class = "content">
-        <button onClick={()=>this.handleClick()} class={button_classes} type="button">   
+      <div>
+        <button onClick={()=>this.handleClick()} 
+          id="hamburger" class={button_classes} type="button">   
           <span class="hamburger-box">
             <span class="hamburger-inner"></span>
           </span>
         </button>
+          
+        <div class = "content">
+          <div id = "riceAppsText">
+              <span class="lightBlue">R</span>ice<span class="lightBlue">A</span>pps
+          </div>
+          <div id="whiteText">
+          <hr/>
 
-        <div id = "riceAppsText">
-            <span class="lightBlue">R</span>ice<span class="lightBlue">A</span>pps
+          <p id = "weDoThingsText">We do things.</p>
+          </div>
         </div>
-        <div id="whiteText">
-        <hr/>
-
-        <p id = "weDoThingsText">We do things.</p>
-        </div>
-
       </div>
 
         /*<Grid id="grid" centered columns={3} >

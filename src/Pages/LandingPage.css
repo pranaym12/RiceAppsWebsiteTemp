@@ -1,3 +1,9 @@
+#hamburger{
+    position: fixed;
+    align-self: flex-start;
+    justify-content: flex-start;
+    
+}
 hr {
     height: 0.5vh;
     border: 0;

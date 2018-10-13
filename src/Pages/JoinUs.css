@@ -1,0 +1,41 @@
+.title{
+  display: flex;
+  flex-wrap:nowrap;
+  align-items: center;
+  justify-content: space-around;
+  color: #002FA4;
+  padding-left: 5%;
+  padding-top: 12%;
+  width: 75%;
+  height: 20%;
+}
+
+.title h1{
+  font-size: 400%;
+
+}
+
+hr{
+  background-color: #002FA4;
+  width: 30%;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-around;
+  padding-left: 62%;
+  width: 95%;
+  height: 60%;
+  color: #002FA4;
+}
+
+.text h1{
+  font-size: 550%;
+}
+
+.text div{
+  font-size: 250%;
+  line-height: 1.4;
+}

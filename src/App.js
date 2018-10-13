@@ -7,6 +7,7 @@ import Projects1 from './Pages/Projects1.js';
 import Projects2 from './Pages/Projects2.js';
 import Customer from './Pages/Customer.js';
 import Footer from './Pages/Footer.js';
+import WorkForUs from './Pages/WorkForUs.js';
 import 'semantic-ui-css/semantic.min.css';
 
 
@@ -15,6 +16,7 @@ class App extends Component {
     return (
   <div>
   <LandingPage/>
+  <WorkForUs/>
   </div>
     );
   }

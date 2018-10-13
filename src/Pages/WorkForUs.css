@@ -1,0 +1,75 @@
+#LikeWhatYouSee{
+    padding-left: 5%;
+    font-size: 8vh;
+    color: #729AFC;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-self: flex-end;
+}
+
+.content{
+    height:103vh;/*Makes the page fill the whole page and then some*/
+    background: #002FA4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#WorkForUs{
+    padding-top: 0;
+    margin-right: 3%;
+    font-size: 8vh;
+    color: #ffffff;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-self: flex-start;
+}
+#weDoThingsText{
+  padding-left: 2%;
+}
+
+#LikeWhatYouSee hr{
+  background-color:#729AFC;
+  height: 0.5vh;
+  border: 0;
+  margin: 1em 0;
+  padding: 0;
+  width: 25%;
+}
+
+#WorkForUs hr{
+  margin-left: 3%;
+  background-color:white;
+  height: 0.5vh;
+  border: 0;
+  /*margin: 1em 0;*/
+  width: 25%;
+  margin-top: 0;
+}
+
+#text1 {
+  padding-left: 3%;
+  width: 50%;
+  font-weight: bold;
+}
+/*
+#text2 {
+  padding-right: 3%;
+  width: 27%;
+  border-bottom: 1px solid white;
+  margin-bottom: -1px;
+  font-weight: bold;
+}
+*/
+
+#WorkForUs p{
+  /*padding-right: 3%;*/
+  border-bottom: 0.2vh solid white;
+  /*margin-bottom: -1vh;*/
+  font-weight: bold;
+}

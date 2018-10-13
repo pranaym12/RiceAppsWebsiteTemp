@@ -14,7 +14,7 @@
   font-size: 500%;
 }
 
-hr{
+.title hr{
   background-color: #B1CBF6;
   width: 30%;
 
@@ -32,7 +32,7 @@ hr{
 }
 
 .projectSection .emptySpace{
-  height: 340px;
-  width: 340px;
+  height: 80%;
+  width: 18%;
   background: #D8D8D8;
 }

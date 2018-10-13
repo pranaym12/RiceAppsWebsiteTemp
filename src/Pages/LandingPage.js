@@ -7,15 +7,28 @@ import './LandingPage.css';
 export default class LandingPage extends Component{
   render() {
     return(
-      
-        <Grid id="grid" centered columns={3} >
-        
+
+      <div class = "content">
+
+        <div id = "riceAppsText">
+            <span class="lightBlue">R</span>ice<span class="lightBlue">A</span>pps
+        </div>
+        <div id="whiteText">
+        <hr/>
+
+        <p id = "weDoThingsText">We do things.</p>
+        </div>
+
+      </div>
+
+        /*<Grid id="grid" centered columns={3} >
+
         <Grid.Row columns = {1} verticalAlign="middle" >
           <Grid.Column textAlign="center" style={{marginTop: "30vh"}} id="riceAppsText" >
           <div class="whiteText">
               <span class="lightBlue">R</span>ice<span class="lightBlue">A</span>pps
           </div>
-            
+
           </Grid.Column>
         </Grid.Row>
         <Grid.Row columns = {3} >
@@ -24,16 +37,16 @@ export default class LandingPage extends Component{
           </Grid.Column>
           <Grid.Column width = {3} textAlign="center" id="weDoThingsText">
             <div class="whiteText">
-              We do things    
-            </div>  
+              We do things
+            </div>
           </Grid.Column>
           <Grid.Column width = {6.5}>
-            
+
           </Grid.Column>
         </Grid.Row>
-      
-      </Grid>
-      
+
+      </Grid>*/
+
     )
   }
 }

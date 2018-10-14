@@ -11,7 +11,7 @@ export default class JoinUs extends Component {
         </div>
 
         <div id="WorkForUs">
-          <p id = "text2">Work with Us.</p>
+          <p id = "text2"><a href="https://google.com">Work with Us.</a></p>
           <hr/>
         </div>
 

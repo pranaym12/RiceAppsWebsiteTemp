@@ -23,9 +23,12 @@ class App extends Component {
   <WhitePage/>
   <Projects1/>
   <WhitePage/>
-  <JoinUs/>
-  <WorkForUs/>
   <Testimonials/>
+  <WhitePage/>
+  <JoinUs/>
+  <WhitePage/>
+  <WorkForUs/>
+  
   </div>
     );
   }

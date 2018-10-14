@@ -12,7 +12,7 @@ export default class AboutUs extends Component {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </p>
                     <p id="learn-more">
-                        <a href="https://www.google.com/"><u>Read more about our vision.</u></a>
+                        <a href="https://www.google.com/"><u>Here's our mission.</u></a>
                     </p>
                 </div>
             </div>

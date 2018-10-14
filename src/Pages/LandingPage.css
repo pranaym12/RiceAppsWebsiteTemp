@@ -1,27 +1,50 @@
-hr {
-    display: block;
-    height: 1vh;
+
+#hamburger{
+    position: fixed;
+    align-self: flex-start;
+    justify-content: flex-start;
+
+}
+.content hr {
+    height: 0.5vh;
     border: 0;
     background-color: white;
     margin: 1em 0;
     padding: 0;
+    width: 40%;
 }
 #riceAppsText{
     font-size: 12vh;
-    padding-bottom:0;
-}
-
-#grid{
-    height:103vh;/*Makes the page fill the whole page and then some*/
-  background: #002FA4;
-}
-
-#weDoThingsText{
-    font-size: 5vh;
-    /*padding-top:;*/
-}
-.whiteText{
     color: #ffffff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /*align-self: flex-end;*/
+}
+
+.content{
+    height:103vh;/*Makes the page fill the whole page and then some*/
+    background: #002FA4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+#whiteText{
+    padding-top: 4%;
+    margin-left: 3%;
+    font-size: 5vh;
+    color: #ffffff;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /*align-self: flex-start;*/
+}
+#weDoThingsText{
+  padding-left: 2%;
 }
 .lightBlue{
     color: #729AFC !important;

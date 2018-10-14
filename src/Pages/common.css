@@ -32,6 +32,10 @@
   height: 30vh;
 }
 
+.TestimonialsWrapper {
+  height: 100vh;
+  background: linear-gradient(to right, #B1CBF6 60%, white 40%);
+}
 .JoinUsPageWrapper {
   height: 100vh;
   background: linear-gradient(to right, #B1CBF6 60%, white 40%);

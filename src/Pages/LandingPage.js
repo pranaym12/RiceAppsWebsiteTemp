@@ -5,7 +5,7 @@ import 'semantic-ui-css/semantic.min.css';
 import './LandingPage.css';
 import './hamburgers.css';
 
-export default class LandingPage extends Component { 
+export default class LandingPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -17,7 +17,7 @@ export default class LandingPage extends Component {
     this.setState({clicked: !this.state.clicked})
   }
   render() {
-     
+
     var button_classes
     if(this.state.clicked==true) {
       button_classes = "hamburger hamburger--collapse is-active"
@@ -27,13 +27,13 @@ export default class LandingPage extends Component {
     }
     return(
       <div>
-        <button onClick={()=>this.handleClick()} 
-          id="hamburger" class={button_classes} type="button">   
+        <button onClick={()=>this.handleClick()}
+          id="hamburger" class={button_classes} type="button">
           <span class="hamburger-box">
             <span class="hamburger-inner"></span>
           </span>
         </button>
-          
+
         <div class = "content">
           <div id = "riceAppsText">
               <span class="lightBlue">R</span>ice<span class="lightBlue">A</span>pps

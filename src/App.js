@@ -8,6 +8,7 @@ import Projects2 from './Pages/Projects2.js';
 import Customer from './Pages/Customer.js';
 import Footer from './Pages/Footer.js';
 import JoinUs from './Pages/JoinUs.js';
+import WhitePage from './Pages/WhitePage.js'
 import 'semantic-ui-css/semantic.min.css';
 
 
@@ -17,7 +18,9 @@ class App extends Component {
   <div>
   <LandingPage/>
   <AboutUs/>
+  <WhitePage/>
   <Projects1/>
+  <WhitePage/>
   <JoinUs/>
   </div>
     );

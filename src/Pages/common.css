@@ -21,7 +21,7 @@
 
 .ProjectPageWrapper {
   height: 100vh;
-  background: linear-gradient(to right, #4470DE 60%, #F2F2F2 40%);
+  background: linear-gradient(to right, #4470DE 60%, white 40%);
 }
 
 .CustomerPageWrapper {
@@ -34,5 +34,5 @@
 
 .JoinUsPageWrapper {
   height: 100vh;
-  background: linear-gradient(to right, #B1CBF6 60%, #F2F2F2 40%);
+  background: linear-gradient(to right, #B1CBF6 60%, white 40%);
 }

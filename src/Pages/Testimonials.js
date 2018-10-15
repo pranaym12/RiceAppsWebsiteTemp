@@ -12,7 +12,7 @@ export default class Testimonials extends Component {
                         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                     </blockquote>
                     <p id="testimonial-title">
-                        What people say about us
+                        Customers love us
                     </p>
                 </div>
             </div>

@@ -7,7 +7,7 @@ export default class Projects1 extends Component{
     return(
       <div className="ProjectPageWrapper">
         <div className="title">
-          <h1> What we've worked on </h1>
+          <h1> We've delivered </h1>
           <hr/>
         </div>
         <div className="projectSection">

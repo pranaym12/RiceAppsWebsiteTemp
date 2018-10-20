@@ -1,36 +1,87 @@
+.TestimonialsWrapper {
+  height: 100vh;
+  background: linear-gradient(to right, white 0vw, white 30vw, #729AFC 30vw, #729AFC 100vw);
+  display: flex;
+  align-items: center;
+}
+
+
 .outside-testimonials {
-    height: 100vh;
-    background: linear-gradient(to right, white 0vw, white 30vw, #729AFC 30vw, #729AFC 100vw);
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.testimonial-title hr{
-    background-color: #002FA4 !important;
-    height: 0.5vh;
-    width: 35vw;
-    border: 0;
+#line1 {
+  padding-top: 5vh;
+  width: 100vw;
 }
 
-.testimonial-title h1{
-    color: #002FA4;
-    font-size: 7vh;
+.outside-testimonials hr {
+  height: 0.5vh;
+  border: 0;
+  background-color: #002FA4;
+  padding: 0;
+  width: 30vw;
+  margin-left: 20vw;
 }
 
-.testimonial-title{
-    display: flex;
-    flex-wrap:nowrap;
-    align-items: center;
-    justify-content: space-around;
-    padding-left: 7vw;
-    padding-top: 12vh;
-    width: 75vw;
-    height: 20vh;
-}
+
 #testament {
+    display: flex;
+    flex-wrap: nowrap;
     color: white !important;
     font-size: 6vh;
+    margin-right: 15vw;
+    font-style: italic;
+    padding-left: 30vw;
+    /*
+    font-size: 6vh;
     z-index: 9999;
-    margin-top: 10vh;
-    margin-left: 32vw;
+    margin-top: 25vh;
+    margin-left: 60vh;
     line-height: 1.45;
-    width: 45vw;
+    width: 100vh;
+    */
+}
+
+#testimonial-title {
+    padding-top: 5vh;
+    color: #002FA4;
+    font-size: 7vh;
+    line-height: 1.15;
+    display: flex;
+    margin-left: 3vw;
+    justify-content: flex-start;
+    font-weight: bold;
+    /*
+    margin-left: 6vh;
+    font-size: 8vh;
+    margin-top: 2vh;
+    padding-top: 4vh;
+    */
+}
+#titleText {
+  width: 20vw;
+}
+
+#testText {
+  height: 30vh;
+  line-height: 1.50;
+  padding-left: 3vw;
+}
+#quot1 {
+  margin-top: -5vh;
+  height: 0.2vh;
+  font-family: Didot;
+  font-size: 20vh !important;
+  color: #002FA4 !important;
+  font-weight: bold;
+}
+#quot2 {
+  height: 0.2vh;
+  font-family: Didot;
+  font-size: 20vh !important;
+  color: #002FA4 !important;
+  font-weight: bold;
+  margin-top: 25vh;
 }

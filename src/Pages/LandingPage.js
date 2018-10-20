@@ -3,6 +3,7 @@ import { Grid, Menu, Container, Row, Column } from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css';
 import './LandingPage.css';
 import './hamburgers.css';
+import { Parallax } from 'react-scroll-parallax';
 
 export default class LandingPage extends Component {
   constructor(props) {
@@ -37,7 +38,7 @@ export default class LandingPage extends Component {
       menu_div_class = ""
     }
     return(
-      <div>  
+      <div>
         <div id="menuWrapper" class={menu_div_class}>
           <button onClick={()=>this.handleClick()}
               id="hamburger" class={button_classes} type="button">
@@ -51,19 +52,22 @@ export default class LandingPage extends Component {
                 <div>Our Projects</div>
                 <div>Join Us</div>
                 <div>Contact Us</div>
-              </div>       
-          
-        </div>      
+              </div>
+
+        </div>
 
         <div class = "content">
+        <Parallax offsetXMax={5} offsetXMin={-5}>
           <div id = "riceAppsText">
               <span class="lightBlue">R</span>ice<span class="lightBlue">A</span>pps
           </div>
+        </Parallax>
+        <Parallax offsetXMax={-20} offsetXMin={20}>
           <div id="whiteText">
           <hr/>
-
           <p id = "weDoThingsText">We do things.</p>
           </div>
+        </Parallax>
         </div>
       </div>
 

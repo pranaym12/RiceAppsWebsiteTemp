@@ -16,12 +16,12 @@ button{
     background-color: white;
     margin: 1em 0;
     padding: 0;
-    width: 40%;
+    width: 38vw;
 }
 #riceAppsText{
     font-size: 12vh;
     color: #ffffff;
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
     /*align-self: flex-end;*/
@@ -38,18 +38,18 @@ button{
 }
 
 #whiteText{
-    padding-top: 4%;
-    margin-left: 3%;
+    padding-top: 8vh;
+    margin-left: 3vw;
     font-size: 5vh;
     color: #ffffff;
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     /*align-self: flex-start;*/
 }
 #weDoThingsText{
-  padding-left: 2%;
+  padding-left: 2vw;
   width: 50vw;
 }
 .lightBlue{

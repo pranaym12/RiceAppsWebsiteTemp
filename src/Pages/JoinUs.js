@@ -6,7 +6,7 @@ export default class JoinUs extends Component {
     render() {
         return (
             <div className="JoinUsPageWrapper">
-              <div className="title">
+              <div className="jointitle">
                 <h1> Do you have what it takes? </h1>
                 <hr/>
               </div>

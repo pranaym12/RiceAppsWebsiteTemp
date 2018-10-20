@@ -3,7 +3,6 @@ import { Grid, Menu, Container, Row, Column } from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css';
 import './LandingPage.css';
 import './hamburgers.css';
-import Sidebar from "react-sidebar";
 
 export default class LandingPage extends Component {
   constructor(props) {

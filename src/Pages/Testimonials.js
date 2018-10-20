@@ -8,6 +8,7 @@ export default class Testimonials extends Component {
         return (
             <div className="TestimonialsWrapper">
                 <div className="outside-testimonials">
+
                 <Parallax offsetXMax={-5} offsetXMin={20}>
                     <div className ="testimonial-title">
                         <h1>Customers love us</h1>
@@ -17,6 +18,27 @@ export default class Testimonials extends Component {
                     <blockquote id="testament">
                         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                     </blockquote>
+
+                    <div id="testament">
+                      <p id = "quot1">
+                        “
+                      </p>
+                      <p id = "testText">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                      <p id = "quot2">
+                        ”
+                        </p>
+                    </div>
+                    <div id = "line1">
+                      <hr/>
+                    </div>
+                    <div id="testimonial-title">
+                        <p id = "titleText">
+                          What people say about us
+                        </p>
+                    </div>
+
                 </div>
             </div>
         )

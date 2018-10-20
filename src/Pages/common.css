@@ -1,7 +1,7 @@
 .StatPageWrapper {
   height: 50vh;
   background-color: #F8F8F8;
-  padding-top: 7%;
+  padding-top: 7vh;
 }
 
 .landingPageWrapper {
@@ -21,7 +21,7 @@
 
 .ProjectPageWrapper {
   height: 100vh;
-  background: linear-gradient(to right, #4470DE 60%, white 40%);
+  background: linear-gradient(to right, #4470DE 60vw, white 40vw);
 }
 
 .CustomerPageWrapper {
@@ -34,9 +34,9 @@
 
 .TestimonialsWrapper {
   height: 100vh;
-  background: linear-gradient(to right, #B1CBF6 60%, white 40%);
+  background: linear-gradient(to right, #B1CBF6 60vw, white 40vw);
 }
 .JoinUsPageWrapper {
   height: 100vh;
-  background: linear-gradient(to right, #B1CBF6 60%, white 40%);
+  background: linear-gradient(to right, #B1CBF6 60vw, white 40vw);
 }

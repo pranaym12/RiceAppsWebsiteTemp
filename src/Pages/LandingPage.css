@@ -3,6 +3,8 @@
     position: fixed;
     align-self: flex-start;
     justify-content: flex-start;
+    width: 20vw;
+    height: 30vh;
 }
 button{
     outline:none;

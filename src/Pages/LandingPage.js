@@ -34,21 +34,24 @@ export default class LandingPage extends Component {
     return(
       <div>
         <Sidebar
-          sidebar={<b>Sidebar name</b>}
-          open={this.state.sidebarOpen}
-          onSetOpen={this.onSetSidebarOpen}
-          styles={{ sidebar: { background: "white" } }}
-          id="mySidebar"
-        >
+                sidebar={<b>Sidebar name</b>}
+                open={this.state.sidebarOpen}
+                onSetOpen={this.onSetSidebarOpen}
+                styles={{ sidebar: { background: "white" } }}
+                id="mySidebar"
+              >
           {/*<button onClick={() => this.onSetSidebarOpen(true)}>
             Open sidebar
           </button>*/}
+
         </Sidebar>
+        
         <button onClick={()=>this.onSetSidebarOpen(true)}
-          id="hamburger" class={button_classes} type="button">
-          <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-          </span>
+            id="hamburger" class={button_classes} type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+            
         </button>
 
         <div class = "content">

@@ -3,35 +3,55 @@ import { Grid, Menu, Container, Row, Column } from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css';
 import './LandingPage.css';
 import './hamburgers.css';
+import Sidebar from "react-sidebar";
 
 export default class LandingPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-        clicked: false
-
+        clicked: false,
+        sidebarOpen: true
     };
+    this.onSetSidebarOpen = this.onSetSidebarOpen.bind(this);
   }
   handleClick() {
     this.setState({clicked: !this.state.clicked})
   }
+
+  onSetSidebarOpen(open) {
+    this.setState({ sidebarOpen: open });
+  }
+
   render() {
 
     var button_classes
+    var sidebar_menu_classes
     if(this.state.clicked==true) {
       button_classes = "hamburger hamburger--collapse is-active"
+      sidebar_menu_classes = "sidebar"
     }
     else{
       button_classes = "hamburger hamburger--collapse "
+      sidebar_menu_classes = "sidebarHidden"
     }
     return(
-      <div>
-        <button onClick={()=>this.handleClick()}
-          id="hamburger" class={button_classes} type="button">
-          <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-          </span>
-        </button>
+      <div>  
+        <div id="menuWrapper">
+          <button onClick={()=>this.handleClick()}
+              id="hamburger" class={button_classes} type="button">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+          </button>
+              <div id="sidebar" class={sidebar_menu_classes}>
+                <div>Home</div>
+                <div>Our Mission</div>
+                <div>Our Projects</div>
+                <div>Join Us</div>
+                <div>Contact Us</div>
+              </div>       
+          
+        </div>      
 
         <div class = "content">
           <div id = "riceAppsText">

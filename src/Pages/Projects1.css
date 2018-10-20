@@ -6,7 +6,7 @@
   color: #B1CBF6;
   padding-left: 7vw;
   padding-top: 12vh;
-  width: 72vw;
+  width: 75vw;
   height: 20vh;
 }
 
@@ -16,9 +16,9 @@
 
 .projectstitle hr{
   background-color: #B1CBF6;
-  width: 30vw;
+  width: 37vw;
   height: 0.5vh;
-
+  border: 0;
 }
 
 .projectSection{

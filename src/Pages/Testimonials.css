@@ -65,7 +65,7 @@
 }
 
 #testText {
-  height: 35vh;
+  height: 30vh;
   line-height: 1.50;
   padding-left: 3vw;
 }
@@ -83,5 +83,5 @@
   font-size: 20vh !important;
   color: #002FA4 !important;
   font-weight: bold;
-  margin-top: 20vh;
+  margin-top: 25vh;
 }

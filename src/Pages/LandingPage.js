@@ -26,23 +26,26 @@ export default class LandingPage extends Component {
 
     var button_classes
     var sidebar_menu_classes
+    var menu_div_class
     if(this.state.clicked==true) {
       button_classes = "hamburger hamburger--collapse is-active"
       sidebar_menu_classes = "sidebar"
+      menu_div_class = "blueMenu"
     }
     else{
       button_classes = "hamburger hamburger--collapse "
       sidebar_menu_classes = "sidebarHidden"
+      menu_div_class = ""
     }
     return(
       <div>  
-        <div id="menuWrapper">
+        <div id="menuWrapper" class={menu_div_class}>
           <button onClick={()=>this.handleClick()}
               id="hamburger" class={button_classes} type="button">
               <span class="hamburger-box">
                 <span class="hamburger-inner"></span>
               </span>
-          </button>
+            </button>
               <div id="sidebar" class={sidebar_menu_classes}>
                 <div>Home</div>
                 <div>Our Mission</div>

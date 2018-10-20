@@ -3,7 +3,7 @@
     position: fixed;
     align-self: flex-start;
     justify-content: flex-start;
-    width: 30vw;
+    width: 20vw;
     height: 100vh;
 }
 #hamburger{
@@ -11,6 +11,9 @@
 }
 .sidebarHidden{
     display: none;
+}
+.blueMenu{
+    background: white;
 }
 .sidebar{
     display: block;

@@ -16,6 +16,10 @@
 .sidebarUnhidden{
     display: block;
 }
+.sidebar-text{
+    color:#002FA4;
+    margin-top: 4vh
+}
 .blueMenu{
     background: white;
 }

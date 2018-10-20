@@ -54,11 +54,11 @@ export default class LandingPage extends Component {
               </span>
             </button>
               <div id="sidebar" class={sidebar_menu_classes}>
-                <div style={menuLinkStyle}>Home</div>
-                <div style={menuLinkStyle}>Our Mission</div>
-                <div style={menuLinkStyle}>Our Projects</div>
-                <div style={menuLinkStyle}>Join Us</div>
-                <div style={menuLinkStyle}>Contact Us</div>
+                <div class="sidebar-text">Home</div>
+                <div class="sidebar-text">Our Mission</div>
+                <div class="sidebar-text">Our Projects</div>
+                <div class="sidebar-text">Join Us</div>
+                <div class="sidebar-text">Contact sUs</div>
               </div>       
           
         </div>      

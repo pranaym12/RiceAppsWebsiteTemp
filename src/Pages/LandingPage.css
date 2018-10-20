@@ -1,17 +1,24 @@
 
-#hamburger{
+#menuWrapper{
     position: fixed;
     align-self: flex-start;
     justify-content: flex-start;
-    width: 20vw;
-    height: 30vh;
+    width: 30vw;
+    height: 100vh;
+}
+#hamburger{
+
+}
+.sidebarHidden{
+    display: none;
+}
+.sidebar{
+    display: block;
 }
 button{
     outline:none;
 }
-#mySidebar{
-    position:fixed;
-}
+
 .content hr {
     height: 0.5vh;
     border: 0;

@@ -20,13 +20,13 @@ class App extends Component {
   <div>
   <LandingPage/>
   <AboutUs/>
-  
+  <WhitePage/>
   <Projects1/>
-  
+  <WhitePage/>
   <Testimonials/>
-  
+  <WhitePage/>
   <JoinUs/>
-  
+  <WhitePage/>
   <WorkForUs/>
   
   </div>

@@ -3,18 +3,25 @@ import { Grid, Menu, Container, Row, Column } from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css';
 import './LandingPage.css';
 import './hamburgers.css';
+import Sidebar from "react-sidebar";
 
 export default class LandingPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-        clicked: false
-
+        clicked: false,
+        sidebarOpen: true
     };
+    this.onSetSidebarOpen = this.onSetSidebarOpen.bind(this);
   }
   handleClick() {
     this.setState({clicked: !this.state.clicked})
   }
+
+  onSetSidebarOpen(open) {
+    this.setState({ sidebarOpen: open });
+  }
+
   render() {
 
     var button_classes
@@ -26,7 +33,18 @@ export default class LandingPage extends Component {
     }
     return(
       <div>
-        <button onClick={()=>this.handleClick()}
+        <Sidebar
+          sidebar={<b>Sidebar name</b>}
+          open={this.state.sidebarOpen}
+          onSetOpen={this.onSetSidebarOpen}
+          styles={{ sidebar: { background: "white" } }}
+          id="mySidebar"
+        >
+          {/*<button onClick={() => this.onSetSidebarOpen(true)}>
+            Open sidebar
+          </button>*/}
+        </Sidebar>
+        <button onClick={()=>this.onSetSidebarOpen(true)}
           id="hamburger" class={button_classes} type="button">
           <span class="hamburger-box">
             <span class="hamburger-inner"></span>

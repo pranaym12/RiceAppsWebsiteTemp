@@ -3,7 +3,12 @@
     position: fixed;
     align-self: flex-start;
     justify-content: flex-start;
-
+}
+button{
+    outline:none;
+}
+#mySidebar{
+    position:fixed;
 }
 .content hr {
     height: 0.5vh;

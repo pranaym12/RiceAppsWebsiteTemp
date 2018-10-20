@@ -3,6 +3,9 @@ import { Grid, Menu, Container, Row, Column } from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css';
 import './LandingPage.css';
 import './hamburgers.css';
+//import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+//import { BrowserRouter as Router, Route, Link  } from 'react-router-dom';
+
 
 export default class LandingPage extends Component {
   constructor(props) {
@@ -28,13 +31,18 @@ export default class LandingPage extends Component {
     var menu_div_class
     if(this.state.clicked==true) {
       button_classes = "hamburger hamburger--collapse is-active"
-      sidebar_menu_classes = "sidebar"
+      sidebar_menu_classes = "sidebar sidebarUnhidden"
       menu_div_class = "blueMenu"
     }
     else{
       button_classes = "hamburger hamburger--collapse "
-      sidebar_menu_classes = "sidebarHidden"
+      sidebar_menu_classes = "sidebar sidebarHidden"
       menu_div_class = ""
+    }
+    const menuLinkStyle = {
+      color:'#002FA4',
+      
+      marginTop: '4vh'
     }
     return(
       <div>  
@@ -46,11 +54,11 @@ export default class LandingPage extends Component {
               </span>
             </button>
               <div id="sidebar" class={sidebar_menu_classes}>
-                <div>Home</div>
-                <div>Our Mission</div>
-                <div>Our Projects</div>
-                <div>Join Us</div>
-                <div>Contact Us</div>
+                <div style={menuLinkStyle}>Home</div>
+                <div style={menuLinkStyle}>Our Mission</div>
+                <div style={menuLinkStyle}>Our Projects</div>
+                <div style={menuLinkStyle}>Join Us</div>
+                <div style={menuLinkStyle}>Contact Us</div>
               </div>       
           
         </div>      

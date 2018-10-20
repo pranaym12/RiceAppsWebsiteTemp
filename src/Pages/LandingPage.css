@@ -6,18 +6,20 @@
     width: 20vw;
     height: 100vh;
 }
-#hamburger{
-
+.sidebar{
+    font-size:4vh;
+    margin-left: 4vh;
 }
 .sidebarHidden{
     display: none;
 }
+.sidebarUnhidden{
+    display: block;
+}
 .blueMenu{
     background: white;
 }
-.sidebar{
-    display: block;
-}
+
 button{
     outline:none;
 }

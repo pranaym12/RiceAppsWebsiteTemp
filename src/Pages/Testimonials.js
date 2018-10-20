@@ -7,6 +7,7 @@ export default class Testimonials extends Component {
         return (
             <div className="TestimonialsWrapper">
                 <div className="outside-testimonials">
+<<<<<<< HEAD
                     <div id="testament">
                       <p id = "quot1">
                         “
@@ -26,6 +27,15 @@ export default class Testimonials extends Component {
                           What people say about us
                         </p>
                     </div>
+=======
+                    <div className ="testimonial-title">
+                        <h1>Customers love us</h1>
+                        <hr/>
+                    </div>
+                    <blockquote id="testament">
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    </blockquote>
+>>>>>>> ec2b8b25ecbeefe645b53076de717a0d75dbd472
                 </div>
             </div>
         )

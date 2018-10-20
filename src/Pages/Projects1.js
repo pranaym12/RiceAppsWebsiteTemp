@@ -6,7 +6,7 @@ export default class Projects1 extends Component{
   render() {
     return(
       <div className="ProjectPageWrapper">
-        <div className="title">
+        <div className="projectstitle">
           <h1> We've delivered </h1>
           <hr/>
         </div>

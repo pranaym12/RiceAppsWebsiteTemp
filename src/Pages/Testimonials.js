@@ -9,16 +9,6 @@ export default class Testimonials extends Component {
             <div className="TestimonialsWrapper">
                 <div className="outside-testimonials">
 
-                <Parallax offsetXMax={-5} offsetXMin={20}>
-                    <div className ="testimonial-title">
-                        <h1>Customers love us</h1>
-                        <hr/>
-                    </div>
-                </Parallax>
-                    <blockquote id="testament">
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                    </blockquote>
-
                     <div id="testament">
                       <p id = "quot1">
                         “

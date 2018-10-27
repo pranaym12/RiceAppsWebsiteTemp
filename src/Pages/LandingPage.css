@@ -7,7 +7,7 @@
     width: 38vw;
 }
 #riceAppsText{
-    font-size: 12vh;
+    font-size: calc(50px + 6vw);
     color: #ffffff;
     width: 100vw;
     display: flex;
@@ -28,7 +28,7 @@
 #whiteText{
     padding-top: 8vh;
     margin-left: 3vw;
-    font-size: 5vh;
+    font-size: calc(16px + 3vw);
     color: #ffffff;
     width: 100vw;
     display: flex;

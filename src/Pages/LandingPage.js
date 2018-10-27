@@ -6,21 +6,7 @@ import './hamburgers.css';
 import { Parallax } from 'react-scroll-parallax';
 
 export default class LandingPage extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-        clicked: false,
-        sidebarOpen: true
-    };
-    this.onSetSidebarOpen = this.onSetSidebarOpen.bind(this);
-  }
-  handleClick() {
-    this.setState({clicked: !this.state.clicked})
-  }
 
-  onSetSidebarOpen(open) {
-    this.setState({ sidebarOpen: open });
-  }
 
   render() {
 
@@ -60,7 +46,9 @@ export default class LandingPage extends Component {
               </div>
 
         </div>
-
+    
+    return(
+      <div>  
         <div class = "content">
         <Parallax offsetXMax={5} offsetXMin={-5}>
           <div id = "riceAppsText">
@@ -75,33 +63,6 @@ export default class LandingPage extends Component {
         </Parallax>
         </div>
       </div>
-
-        /*<Grid id="grid" centered columns={3} >
-
-        <Grid.Row columns = {1} verticalAlign="middle" >
-          <Grid.Column textAlign="center" style={{marginTop: "30vh"}} id="riceAppsText" >
-          <div class="whiteText">
-              <span class="lightBlue">R</span>ice<span class="lightBlue">A</span>pps
-          </div>
-
-          </Grid.Column>
-        </Grid.Row>
-        <Grid.Row columns = {3} >
-          <Grid.Column width = {6.5} textAlign="right" fluid vertical>
-            <hr/>
-          </Grid.Column>
-          <Grid.Column width = {3} textAlign="center" id="weDoThingsText">
-            <div class="whiteText">
-              We do things
-            </div>
-          </Grid.Column>
-          <Grid.Column width = {6.5}>
-
-          </Grid.Column>
-        </Grid.Row>
-
-      </Grid>*/
-
     )
   }
 }

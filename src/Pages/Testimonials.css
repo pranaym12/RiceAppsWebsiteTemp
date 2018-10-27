@@ -12,7 +12,8 @@
 }
 
 #line1 {
-  padding-top: calc(5px + 6vh + 12vw);
+
+  padding-top: calc(5px + 7vw + 4vh);
   width: 100vw;
 }
 
@@ -30,7 +31,8 @@
     display: flex;
     flex-wrap: nowrap;
     color: white !important;
-    font-size: calc(1.9vh + 2vw);
+
+    font-size: calc(3vw + 0.6vh);
     margin-right: 15vw;
     font-style: italic;
     padding-left: 30vw;
@@ -45,9 +47,10 @@
 }
 
 #testimonial-title {
-    padding-top: 5vh;
+    padding-top: 3vh;
     color: #002FA4;
-    font-size: calc(10px + 2vh + 2vw);
+
+    font-size: calc(5px + 2.8vw + 0.9vh);
     line-height: 1.15;
     display: flex;
     margin-left: 3vw;
@@ -61,7 +64,7 @@
     */
 }
 #titleText {
-  width: 20vw;
+  width: 24vw;
 }
 
 #testText {
@@ -73,14 +76,16 @@
   margin-top: -5vh;
   height: 0.2vh;
   font-family: Didot;
-  font-size: calc(25px + 6vh + 6vw) !important;
+
+  font-size: calc(25px + 7vw + 4vh) !important;
   color: #002FA4 !important;
   font-weight: bold;
 }
 #quot2 {
   height: 0.2vh;
   font-family: Didot;
-  font-size: calc(25px + 6vh + 6vw) !important;
+
+  font-size: calc(25px + 7vw + 4vh) !important;
   color: #002FA4 !important;
   font-weight: bold;
   margin-top: 25vh;

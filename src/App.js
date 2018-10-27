@@ -13,7 +13,9 @@ import JoinUs from './Pages/JoinUs.js';
 import WhitePage from './Pages/WhitePage.js'
 import 'semantic-ui-css/semantic.min.css';
 import { ParallaxProvider } from 'react-scroll-parallax';
-import './App.css'
+import './App.css';
+import ScrollIntoView from 'react-scroll-into-view';
+
 
 class App extends Component {
   //CONSTRUCTOR and functions to handle menu bar
@@ -50,14 +52,14 @@ class App extends Component {
     }
     const menuLinkStyle = {
       color:'#002FA4',
-      
+
       marginTop: '4vh'
     }
     //end of sidebar-menu
     return (
       <ParallaxProvider>
 
-      <div>
+      <div >
         <div id="menuWrapper" class={menu_div_class}>
           <button onClick={()=>this.handleClick()}
               id="hamburger" class={button_classes} type="button">
@@ -66,25 +68,48 @@ class App extends Component {
               </span>
             </button>
               <div id="sidebar" class={sidebar_menu_classes}>
-                <div class="sidebar-text">Home</div>
-                <div class="sidebar-text">Our Mission</div>
-                <div class="sidebar-text">Our Projects</div>
-                <div class="sidebar-text">Join Us</div>
-                <div class="sidebar-text">Contact sUs</div>
-              </div>       
-        </div>   
+                <ScrollIntoView selector="#home">
+                  <div class="sidebar-text">Home</div>
+                </ScrollIntoView>
+                <ScrollIntoView selector="#mission">
+
+                  <div class="sidebar-text">Our Mission</div>
+                </ScrollIntoView>
+                <ScrollIntoView selector="#projects">
+                  <div class="sidebar-text">Our Projects</div>
+                </ScrollIntoView>
+                <ScrollIntoView selector="#join">
+                  <div class="sidebar-text">Join Us</div>
+                </ScrollIntoView>
+                <ScrollIntoView selector="#contact">
+                  <div class="sidebar-text">Contact Us</div>
+                </ScrollIntoView>
+
+              </div>
+        </div>
       </div>
       <div>
-      <LandingPage/>
-      <AboutUs/>
+      <div id="home">
+        <LandingPage />
+      </div>
+      <div id="mission">
+        <AboutUs/>
+      </div>
+
       <WhitePage/>
-      <Projects1/>
+      <div id="projects">
+        <Projects1/>
+      </div>
       <WhitePage/>
       <Testimonials/>
       <WhitePage/>
-      <JoinUs/>
+      <div id="join">
+        <JoinUs/>
+      </div>
       <WhitePage/>
-      <WorkForUs/>
+      <div id="contact">
+        <WorkForUs/>
+      </div>
 
       </div>
       </ParallaxProvider>

@@ -34,14 +34,6 @@
     margin-right: 15vw;
     font-style: italic;
     padding-left: 30vw;
-    /*
-    font-size: 6vh;
-    z-index: 9999;
-    margin-top: 25vh;
-    margin-left: 60vh;
-    line-height: 1.45;
-    width: 100vh;
-    */
 }
 
 #testimonial-title {
@@ -53,12 +45,6 @@
     margin-left: 3vw;
     justify-content: flex-start;
     font-weight: bold;
-    /*
-    margin-left: 6vh;
-    font-size: 8vh;
-    margin-top: 2vh;
-    padding-top: 4vh;
-    */
 }
 #titleText {
   width: 20vw;

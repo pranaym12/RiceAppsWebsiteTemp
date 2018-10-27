@@ -11,24 +11,23 @@ import Testimonials from './Pages/Testimonials.js'
 import WorkForUs from './Pages/WorkForUs.js';
 import JoinUs from './Pages/JoinUs.js';
 import WhitePage from './Pages/WhitePage.js'
-import 'semantic-ui-css/semantic.min.css';
 import { ParallaxProvider } from 'react-scroll-parallax';
 
 class App extends Component {
   render() {
     return (
-  <ParallaxProvider>
-  <div>
-  <LandingPage/>
-  <AboutUs/>
-  <WhitePage/>
-  <Projects1/>
-  <WhitePage/>
-  <Testimonials/>
-  <WhitePage/>
-  <JoinUs/>
-  <WhitePage/>
-  <WorkForUs/>
+  <ParallaxProvider class = "parallax">
+  <div class = "body">
+    <LandingPage/>
+    <AboutUs/>
+    <WhitePage/>
+    <Projects1/>
+    <WhitePage/>
+    <Testimonials/>
+    <WhitePage/>
+    <JoinUs/>
+    <WhitePage/>
+    <WorkForUs/>
 
   </div>
   </ParallaxProvider>

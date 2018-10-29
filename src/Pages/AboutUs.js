@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './common.css';
 import './AboutUs.css';
+import { Parallax } from 'react-scroll-parallax';
 
 export default class AboutUs extends Component {
     render() {

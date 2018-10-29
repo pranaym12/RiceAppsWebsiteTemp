@@ -12,3 +12,32 @@ html {
   background-size: contain;
   min-width: 100%;
 }
+/* Start of menu CSS */
+#menuWrapper{
+  position: fixed;
+  align-self: flex-start;
+  justify-content: flex-start;
+  width: 20vw;
+  height: 100vh;
+}
+.sidebar{
+  font-size:4vh;
+  margin-left: 4vh;
+}
+.sidebarHidden{
+  display: none;
+}
+.sidebarUnhidden{
+  display: block;
+}
+.sidebar-text{
+  color:#002FA4;
+  margin-top: 4vh
+}
+.blueMenu{
+  background: white;
+}
+button{
+  outline:none;
+}
+/* End of menu CSS */

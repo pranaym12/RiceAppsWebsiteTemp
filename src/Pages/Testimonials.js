@@ -22,6 +22,7 @@ export default class Testimonials extends Component {
                         ”
                         </p>
                     </div>
+                    <Parallax offsetXMax={40} offsetXMin={-15}>
                     <div id = "line1">
                       <hr/>
                     </div>
@@ -31,6 +32,7 @@ export default class Testimonials extends Component {
                           What people say about us
                         </p>
                     </div>
+                    </Parallax>
 
                 </div>
             </div>

@@ -11,7 +11,7 @@
 }
 
 .projectstitle h1{
-  font-size: 7vh;
+  font-size: calc(35px + 1.3vw + 1.3vh);
 }
 
 .projectstitle hr{

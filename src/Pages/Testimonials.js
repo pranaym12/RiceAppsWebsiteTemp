@@ -8,6 +8,7 @@ export default class Testimonials extends Component {
         return (
             <div className="TestimonialsWrapper">
                 <div className="outside-testimonials">
+
                     <div id="testament">
                       <p id = "quot1">
                         “
@@ -29,6 +30,7 @@ export default class Testimonials extends Component {
                         </p>
                     </div>
                     </Parallax>
+
                 </div>
             </div>
         )

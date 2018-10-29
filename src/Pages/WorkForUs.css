@@ -1,6 +1,6 @@
 #LikeWhatYouSee{
     padding-left: 5vw;
-    font-size: 8vh;
+    font-size: calc(10px + 3vw + 1vh);
     color: #729AFC;
     width: 100vw;
     display: flex;
@@ -21,7 +21,7 @@
 #WorkForUs{
     padding-top: 0;
     margin-right: 3vw;
-    font-size: 8vh;
+    font-size: calc(10px + 3vw + 1vh);
     color: #ffffff;
     width: 100vw;
     display: flex;

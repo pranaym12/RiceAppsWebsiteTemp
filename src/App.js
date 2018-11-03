@@ -17,79 +17,91 @@ import ScrollIntoView from 'react-scroll-into-view';
 
 
 class App extends Component {
+  
   //CONSTRUCTOR and functions to handle menu bar
   constructor(props) {
     super(props);
     this.state = {
-        clicked: false,
-        sidebarOpen: true
+      clicked: false,
+      sidebarOpen: true
     };
     this.onSetSidebarOpen = this.onSetSidebarOpen.bind(this);
   }
   handleClick() {
-    this.setState({clicked: !this.state.clicked})
+    //call this function when the hamburger menu is clicked
+    //if the menu is open, close it
+    //if it's closed, open it
+    this.setState({ clicked: !this.state.clicked })
   }
   onSetSidebarOpen(open) {
     this.setState({ sidebarOpen: open });
   }
+
+
   closeSidebar(){
-    if(this.state.clicked){
-      this.setState({clicked: false});
+    //Call this function whenever user clicks outside of the sidebar menu
+    if(this.state.clicked ){
+      //But only sets clicked to False when clicked is True
+      this.setState({ clicked: false })
     }
   }
+  
   //end of sidebar-menu
 
   render() {
+    //start sidebar-menu
     //if statemenets to display and hide sidebar-menu
     var button_classes
     var sidebar_menu_classes
     var menu_div_class
-    if(this.state.clicked==true) {
+
+    if (this.state.clicked == true) {
       button_classes = "hamburger hamburger--collapse is-active"
       sidebar_menu_classes = "sidebar sidebarUnhidden"
       menu_div_class = "blueMenu"
     }
-    else{
+    else {
       button_classes = "hamburger hamburger--collapse "
       sidebar_menu_classes = "sidebar sidebarHidden"
       menu_div_class = ""
     }
     const menuLinkStyle = {
-      color:'#002FA4',
-
+      color: '#002FA4',
       marginTop: '4vh'
     }
     //end of sidebar-menu
     return (
-  <div>
-  <div id = "menubar">
-        <div id="menuWrapper" class={menu_div_class}>
-          <button onClick={()=>this.handleClick()}
+        <div >
+          <div id="menuWrapper" class={menu_div_class}>
+            <button onClick={() => this.handleClick()}
               id="hamburger" class={button_classes} type="button">
               <span class="hamburger-box">
                 <span class="hamburger-inner"></span>
               </span>
             </button>
-              <div id="sidebar" class={sidebar_menu_classes}>
-                <ScrollIntoView selector="#home">
-                  <div class="sidebar-text">Home</div>
-                </ScrollIntoView>
-                <ScrollIntoView selector="#mission">
-                  <div class="sidebar-text">Our Mission</div>
-                </ScrollIntoView>
-                <ScrollIntoView selector="#projects">
-                  <div class="sidebar-text">Our Projects</div>
-                </ScrollIntoView>
-                <ScrollIntoView selector="#join">
-                  <div class="sidebar-text">Join Us</div>
-                </ScrollIntoView>
-                <ScrollIntoView selector="#contact">
-                  <div class="sidebar-text">Contact Us</div>
-                </ScrollIntoView>
-              </div>
-            </div>
-        </div>
 
+            <div id="sidebar" class={sidebar_menu_classes}>
+              <ScrollIntoView selector="#home">
+                <div class="sidebar-text">Home</div>
+              </ScrollIntoView>
+              <ScrollIntoView selector="#mission">
+
+                <div class="sidebar-text">Our Mission</div>
+              </ScrollIntoView>
+              <ScrollIntoView selector="#projects">
+                <div class="sidebar-text">Our Projects</div>
+              </ScrollIntoView>
+              <ScrollIntoView selector="#join">
+                <div class="sidebar-text">Join Us</div>
+              </ScrollIntoView>
+              <ScrollIntoView selector="#contact">
+                <div class="sidebar-text">Contact Us</div>
+              </ScrollIntoView>
+
+            </div>
+          </div>
+        </div>
+ 
       <ParallaxProvider id = "contents">
       <div onClick={() => this.closeSidebar()}>
         <div id="home">
@@ -112,9 +124,9 @@ class App extends Component {
         <div id="contact">
           <WorkForUs/>
         </div>
-      </div>
+        </div>
       </ParallaxProvider>
-    </div>
+</div>
     );
   }
 }

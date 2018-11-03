@@ -17,7 +17,7 @@ import ScrollIntoView from 'react-scroll-into-view';
 
 
 class App extends Component {
-  
+
   //CONSTRUCTOR and functions to handle menu bar
   constructor(props) {
     super(props);
@@ -37,14 +37,14 @@ class App extends Component {
     this.setState({ sidebarOpen: open });
   }
 
-  closeSidebar(){
+  closeSidebar() {
     //Call this function whenever user clicks outside of the sidebar menu
-    if(this.state.clicked ){
+    if (this.state.clicked) {
       //But only sets clicked to False when clicked is True
       this.setState({ clicked: false })
     }
   }
-  
+
   //end of sidebar-menu
 
   render() {
@@ -70,8 +70,8 @@ class App extends Component {
     }
     //end of sidebar-menu
     return (
-        <div >
-          <div id="menubar">
+      <div >
+        <div id="menubar">
           <div id="menuWrapper" class={menu_div_class}>
             <button onClick={() => this.handleClick()}
               id="hamburger" class={button_classes} type="button">
@@ -103,31 +103,31 @@ class App extends Component {
         </div>
         <ParallaxProvider id="contents">
 
-        <div onClick={()=>this.closeSidebar()}>
-          <div id="home">
-            <LandingPage />
-          </div>
-          <div id="mission">
-            <AboutUs />
-          </div>
+          <div onClick={() => this.closeSidebar()}>
+            <div id="home">
+              <LandingPage />
+            </div>
+            <div id="mission">
+              <AboutUs />
+            </div>
 
-          <WhitePage />
-          <div id="projects">
-            <Projects1 />
-          </div>
-          <WhitePage />
-          <Testimonials />
-          <WhitePage />
-          <div id="join">
-            <JoinUs />
-          </div>
-          <WhitePage />
-          <div id="contact">
-            <WorkForUs />
-          </div>
+            <WhitePage />
+            <div id="projects">
+              <Projects1 />
+            </div>
+            <WhitePage />
+            <Testimonials />
+            <WhitePage />
+            <div id="join">
+              <JoinUs />
+            </div>
+            <WhitePage />
+            <div id="contact">
+              <WorkForUs />
+            </div>
 
-        </div>
-      </ParallaxProvider>
+          </div>
+        </ParallaxProvider>
       </div>
     );
   }

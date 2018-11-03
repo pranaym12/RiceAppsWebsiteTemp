@@ -70,8 +70,8 @@ class App extends Component {
     }
     //end of sidebar-menu
     return (
-      <ParallaxProvider>
         <div >
+          <div id="menubar">
           <div id="menuWrapper" class={menu_div_class}>
             <button onClick={() => this.handleClick()}
               id="hamburger" class={button_classes} type="button">
@@ -101,6 +101,8 @@ class App extends Component {
             </div>
           </div>
         </div>
+        <ParallaxProvider id="contents">
+
         <div onClick={()=>this.closeSidebar()}>
           <div id="home">
             <LandingPage />
@@ -126,6 +128,7 @@ class App extends Component {
 
         </div>
       </ParallaxProvider>
+      </div>
     );
   }
 }

@@ -32,6 +32,11 @@ class App extends Component {
   onSetSidebarOpen(open) {
     this.setState({ sidebarOpen: open });
   }
+  closeSidebar(){
+    if(this.state.clicked){
+      this.setState({clicked: false});
+    }
+  }
   //end of sidebar-menu
 
   render() {
@@ -86,7 +91,7 @@ class App extends Component {
         </div>
 
       <ParallaxProvider id = "contents">
-      <div>
+      <div onClick={() => this.closeSidebar()}>
         <div id="home">
           <LandingPage />
         </div>

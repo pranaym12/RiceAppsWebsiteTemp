@@ -11,7 +11,6 @@ import Testimonials from './Pages/Testimonials.js'
 import WorkForUs from './Pages/WorkForUs.js';
 import JoinUs from './Pages/JoinUs.js';
 import WhitePage from './Pages/WhitePage.js'
-import { ParallaxProvider } from 'react-scroll-parallax';
 import './App.css';
 import ScrollIntoView from 'react-scroll-into-view';
 
@@ -101,33 +100,31 @@ class App extends Component {
             </div>
           </div>
         </div>
-        <ParallaxProvider id="contents">
 
-          <div onClick={() => this.closeSidebar()}>
-            <div id="home">
-              <LandingPage />
-            </div>
-            <div id="mission">
-              <AboutUs />
-            </div>
-
-            <WhitePage />
-            <div id="projects">
-              <Projects1 />
-            </div>
-            <WhitePage />
-            <Testimonials />
-            <WhitePage />
-            <div id="join">
-              <JoinUs />
-            </div>
-            <WhitePage />
-            <div id="contact">
-              <WorkForUs />
-            </div>
-
+        <div onClick={() => this.closeSidebar()}>
+          <div id="home">
+            <LandingPage />
           </div>
-        </ParallaxProvider>
+          <div id="mission">
+            <AboutUs />
+          </div>
+
+          <WhitePage />
+          <div id="projects">
+            <Projects1 />
+          </div>
+          <WhitePage />
+          <Testimonials />
+          <WhitePage />
+          <div id="join">
+            <JoinUs />
+          </div>
+          <WhitePage />
+          <div id="contact">
+            <WorkForUs />
+          </div>
+
+        </div>
       </div>
     );
   }

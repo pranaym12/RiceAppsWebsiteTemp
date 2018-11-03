@@ -22,13 +22,13 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-        clicked: false,
-        sidebarOpen: true
+      clicked: false,
+      sidebarOpen: true
     };
     this.onSetSidebarOpen = this.onSetSidebarOpen.bind(this);
   }
   handleClick() {
-    this.setState({clicked: !this.state.clicked})
+    this.setState({ clicked: !this.state.clicked })
   }
   onSetSidebarOpen(open) {
     this.setState({ sidebarOpen: open });
@@ -36,82 +36,82 @@ class App extends Component {
   //end of sidebar-menu
 
   render() {
+    //start sidebar-menu
     //if statemenets to display and hide sidebar-menu
     var button_classes
     var sidebar_menu_classes
     var menu_div_class
-    if(this.state.clicked==true) {
+    if (this.state.clicked == true) {
       button_classes = "hamburger hamburger--collapse is-active"
       sidebar_menu_classes = "sidebar sidebarUnhidden"
       menu_div_class = "blueMenu"
     }
-    else{
+    else {
       button_classes = "hamburger hamburger--collapse "
       sidebar_menu_classes = "sidebar sidebarHidden"
       menu_div_class = ""
     }
     const menuLinkStyle = {
-      color:'#002FA4',
+      color: '#002FA4',
 
       marginTop: '4vh'
     }
     //end of sidebar-menu
     return (
       <ParallaxProvider>
-
-      <div >
-        <div id="menuWrapper" class={menu_div_class}>
-          <button onClick={()=>this.handleClick()}
+        <div >
+          <div id="menuWrapper" class={menu_div_class}>
+            <button onClick={() => this.handleClick()}
               id="hamburger" class={button_classes} type="button">
               <span class="hamburger-box">
                 <span class="hamburger-inner"></span>
               </span>
             </button>
-              <div id="sidebar" class={sidebar_menu_classes}>
-                <ScrollIntoView selector="#home">
-                  <div class="sidebar-text">Home</div>
-                </ScrollIntoView>
-                <ScrollIntoView selector="#mission">
+            <div id="sidebar" class={sidebar_menu_classes}>
+              <ScrollIntoView selector="#home">
+                <div class="sidebar-text">Home</div>
+              </ScrollIntoView>
+              <ScrollIntoView selector="#mission">
 
-                  <div class="sidebar-text">Our Mission</div>
-                </ScrollIntoView>
-                <ScrollIntoView selector="#projects">
-                  <div class="sidebar-text">Our Projects</div>
-                </ScrollIntoView>
-                <ScrollIntoView selector="#join">
-                  <div class="sidebar-text">Join Us</div>
-                </ScrollIntoView>
-                <ScrollIntoView selector="#contact">
-                  <div class="sidebar-text">Contact Us</div>
-                </ScrollIntoView>
+                <div class="sidebar-text">Our Mission</div>
+              </ScrollIntoView>
+              <ScrollIntoView selector="#projects">
+                <div class="sidebar-text">Our Projects</div>
+              </ScrollIntoView>
+              <ScrollIntoView selector="#join">
+                <div class="sidebar-text">Join Us</div>
+              </ScrollIntoView>
+              <ScrollIntoView selector="#contact">
+                <div class="sidebar-text">Contact Us</div>
+              </ScrollIntoView>
 
-              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div>
-      <div id="home">
-        <LandingPage />
-      </div>
-      <div id="mission">
-        <AboutUs/>
-      </div>
+        <div>
+          <div id="home">
+            <LandingPage />
+          </div>
+          <div id="mission">
+            <AboutUs />
+          </div>
 
-      <WhitePage/>
-      <div id="projects">
-        <Projects1/>
-      </div>
-      <WhitePage/>
-      <Testimonials/>
-      <WhitePage/>
-      <div id="join">
-        <JoinUs/>
-      </div>
-      <WhitePage/>
-      <div id="contact">
-        <WorkForUs/>
-      </div>
+          <WhitePage />
+          <div id="projects">
+            <Projects1 />
+          </div>
+          <WhitePage />
+          <Testimonials />
+          <WhitePage />
+          <div id="join">
+            <JoinUs />
+          </div>
+          <WhitePage />
+          <div id="contact">
+            <WorkForUs />
+          </div>
 
-      </div>
+        </div>
       </ParallaxProvider>
     );
   }

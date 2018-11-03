@@ -9,6 +9,8 @@ export default class Testimonials extends Component {
             <div className="TestimonialsWrapper">
                 <div className="outside-testimonials">
 
+                <Parallax offsetXMax={-5} offsetXMin={20}>
+
                     <div id="testament">
                       <p id = "quot1">
                         “
@@ -20,6 +22,7 @@ export default class Testimonials extends Component {
                         ”
                         </p>
                     </div>
+                    </Parallax>
                     <Parallax offsetXMax={40} offsetXMin={-15}>
                     <div id = "line1">
                       <hr/>

@@ -11,7 +11,6 @@ import Testimonials from './Pages/Testimonials.js'
 import WorkForUs from './Pages/WorkForUs.js';
 import JoinUs from './Pages/JoinUs.js';
 import WhitePage from './Pages/WhitePage.js'
-import 'semantic-ui-css/semantic.min.css';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import './App.css';
 import ScrollIntoView from 'react-scroll-into-view';
@@ -80,6 +79,7 @@ class App extends Component {
                 <span class="hamburger-inner"></span>
               </span>
             </button>
+
             <div id="sidebar" class={sidebar_menu_classes}>
               <ScrollIntoView selector="#home">
                 <div class="sidebar-text">Home</div>
@@ -126,6 +126,7 @@ class App extends Component {
 
         </div>
       </ParallaxProvider>
+    </div>
     );
   }
 }

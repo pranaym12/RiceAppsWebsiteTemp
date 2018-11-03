@@ -56,8 +56,8 @@ class App extends Component {
     }
     //end of sidebar-menu
     return (
-      <div>
-      <div id = "menubar">
+  <div>
+  <div id = "menubar">
         <div id="menuWrapper" class={menu_div_class}>
           <button onClick={()=>this.handleClick()}
               id="hamburger" class={button_classes} type="button">

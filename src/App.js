@@ -40,7 +40,10 @@ class App extends Component {
 
   closeSidebar(){
     //Call this function whenever user clicks outside of the sidebar menu
-    this.setState({ clicked: false })
+    if(this.state.clicked ){
+      //But only sets clicked to False when clicked is True
+      this.setState({ clicked: false })
+    }
   }
   
   //end of sidebar-menu

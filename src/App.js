@@ -18,6 +18,7 @@ import ScrollIntoView from 'react-scroll-into-view';
 
 
 class App extends Component {
+  
   //CONSTRUCTOR and functions to handle menu bar
   constructor(props) {
     super(props);
@@ -28,11 +29,20 @@ class App extends Component {
     this.onSetSidebarOpen = this.onSetSidebarOpen.bind(this);
   }
   handleClick() {
+    //call this function when the hamburger menu is clicked
+    //if the menu is open, close it
+    //if it's closed, open it
     this.setState({ clicked: !this.state.clicked })
   }
   onSetSidebarOpen(open) {
     this.setState({ sidebarOpen: open });
   }
+
+  closeSidebar(){
+    //Call this function whenever user clicks outside of the sidebar menu
+    this.setState({ clicked: false })
+  }
+  
   //end of sidebar-menu
 
   render() {
@@ -41,6 +51,7 @@ class App extends Component {
     var button_classes
     var sidebar_menu_classes
     var menu_div_class
+
     if (this.state.clicked == true) {
       button_classes = "hamburger hamburger--collapse is-active"
       sidebar_menu_classes = "sidebar sidebarUnhidden"
@@ -53,7 +64,6 @@ class App extends Component {
     }
     const menuLinkStyle = {
       color: '#002FA4',
-
       marginTop: '4vh'
     }
     //end of sidebar-menu
@@ -88,7 +98,7 @@ class App extends Component {
             </div>
           </div>
         </div>
-        <div>
+        <div onClick={()=>this.closeSidebar()}>
           <div id="home">
             <LandingPage />
           </div>

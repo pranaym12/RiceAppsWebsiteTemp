@@ -11,7 +11,6 @@ import Testimonials from './Pages/Testimonials.js'
 import WorkForUs from './Pages/WorkForUs.js';
 import JoinUs from './Pages/JoinUs.js';
 import WhitePage from './Pages/WhitePage.js'
-import 'semantic-ui-css/semantic.min.css';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import './App.css';
 import ScrollIntoView from 'react-scroll-into-view';
@@ -57,9 +56,8 @@ class App extends Component {
     }
     //end of sidebar-menu
     return (
-      <ParallaxProvider>
-
-      <div >
+  <div>
+  <div id = "menubar">
         <div id="menuWrapper" class={menu_div_class}>
           <button onClick={()=>this.handleClick()}
               id="hamburger" class={button_classes} type="button">
@@ -72,7 +70,6 @@ class App extends Component {
                   <div class="sidebar-text">Home</div>
                 </ScrollIntoView>
                 <ScrollIntoView selector="#mission">
-
                   <div class="sidebar-text">Our Mission</div>
                 </ScrollIntoView>
                 <ScrollIntoView selector="#projects">
@@ -84,35 +81,35 @@ class App extends Component {
                 <ScrollIntoView selector="#contact">
                   <div class="sidebar-text">Contact Us</div>
                 </ScrollIntoView>
-
               </div>
+            </div>
+        </div>
+
+      <ParallaxProvider id = "contents">
+      <div>
+        <div id="home">
+          <LandingPage />
+        </div>
+        <div id="mission">
+          <AboutUs/>
+        </div>
+        <WhitePage/>
+        <div id="projects">
+          <Projects1/>
+        </div>
+        <WhitePage/>
+        <Testimonials/>
+        <WhitePage/>
+        <div id="join">
+          <JoinUs/>
+        </div>
+        <WhitePage/>
+        <div id="contact">
+          <WorkForUs/>
         </div>
       </div>
-      <div>
-      <div id="home">
-        <LandingPage />
-      </div>
-      <div id="mission">
-        <AboutUs/>
-      </div>
-
-      <WhitePage/>
-      <div id="projects">
-        <Projects1/>
-      </div>
-      <WhitePage/>
-      <Testimonials/>
-      <WhitePage/>
-      <div id="join">
-        <JoinUs/>
-      </div>
-      <WhitePage/>
-      <div id="contact">
-        <WorkForUs/>
-      </div>
-
-      </div>
       </ParallaxProvider>
+    </div>
     );
   }
 }

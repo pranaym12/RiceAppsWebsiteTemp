@@ -3,11 +3,10 @@
   writing-mode: vertical-lr;
   top: 50%;
   left: 50%;
-  transform: translateX(-50%) translateY(-50%)
+  transform: translateX(-50%) translateY(-50%);
 }
 .main{
-  background-color: 
-    blue;
+  background-color: blue;
 }
 /* Start of menu CSS */
 #menuWrapper{
@@ -36,5 +35,13 @@
 }
 button{
   outline:none;
+}
+
+#menubar{
+  position: absolute;
+  z-index: 100;
+}
+#contents{
+  z-index: 20;
 }
 /* End of menu CSS */

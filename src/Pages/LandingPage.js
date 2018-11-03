@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import { Grid, Menu, Container, Row, Column } from 'semantic-ui-react';
-import 'semantic-ui-css/semantic.min.css';
 import './LandingPage.css';
 import './hamburgers.css';
-import { Parallax } from 'react-scroll-parallax';
+import Slide from 'react-reveal/Slide';
 
 export default class LandingPage extends Component {
 
@@ -14,17 +12,17 @@ export default class LandingPage extends Component {
     return(
       <div>  
         <div class = "content">
-        <Parallax offsetXMax={5} offsetXMin={-5}>
+        <Slide left>
           <div id = "riceAppsText">
               <span class="lightBlue">R</span>ice<span class="lightBlue">A</span>pps
           </div>
-        </Parallax>
-        <Parallax offsetXMax={-20} offsetXMin={20}>
+        </Slide>
+        <Slide right>
           <div id="whiteText">
           <hr/>
           <p id = "weDoThingsText">We do things.</p>
           </div>
-        </Parallax>
+        </Slide>
         </div>
       </div>
     )

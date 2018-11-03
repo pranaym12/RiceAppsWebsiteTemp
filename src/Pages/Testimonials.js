@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './common.css';
 import './Testimonials.css';
-import { Parallax } from 'react-scroll-parallax';
+import Slide from 'react-reveal/Slide';
 
 export default class Testimonials extends Component {
     render() {
@@ -9,30 +9,30 @@ export default class Testimonials extends Component {
             <div className="TestimonialsWrapper">
                 <div className="outside-testimonials">
 
-                <Parallax offsetXMax={-5} offsetXMin={20}>
+                    <Slide right>
 
-                    <div id="testament">
-                      <p id = "quot1">
-                        “
+                        <div id="testament">
+                            <p id="quot1">
+                                “
                       </p>
-                      <p id = "testText">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            <p id="testText">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         </p>
-                      <p id = "quot2">
-                        ”
+                            <p id="quot2">
+                                ”
                         </p>
-                    </div>
-                    </Parallax>
-                    <Parallax offsetXMax={40} offsetXMin={-15}>
-                    <div id = "line1">
-                      <hr/>
-                    </div>
-                    <div id="testimonial-title">
-                        <p id = "titleText">
-                          What people say about us
+                        </div>
+                    </Slide>
+                    <Slide left>
+                        <div id="line1">
+                            <hr />
+                        </div>
+                        <div id="testimonial-title">
+                            <p id="titleText">
+                                What people say about us
                         </p>
-                    </div>
-                    </Parallax>
+                        </div>
+                    </Slide>
 
                 </div>
             </div>

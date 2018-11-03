@@ -36,4 +36,12 @@
 button{
   outline:none;
 }
+
+#menubar{
+  position: absolute;
+  z-index: 100;
+}
+#contents{
+  z-index: 20;
+}
 /* End of menu CSS */

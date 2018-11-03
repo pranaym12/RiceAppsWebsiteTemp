@@ -126,7 +126,6 @@ class App extends Component {
 
         </div>
       </ParallaxProvider>
-    </div>
     );
   }
 }
